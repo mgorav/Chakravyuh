@@ -20,6 +20,8 @@ Graph based ML engineering tracking platform by infrencing ML engineering metada
 * Pointer to data location (s3 etc)
 * Record/Track execution based on hyper parameters
 * Versioning management as first class citizen of design
+* Generate OAS 3.0 specification from features (used by model serving layer)
+* Extract feature from Data Frame via reactive REST API
 
 ## Why name [Chakravyuh](http://mahabharata-research.com/military%20academy/the%20mysterious%20chakravyuha.html)?
 
