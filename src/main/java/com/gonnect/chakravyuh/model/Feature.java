@@ -17,7 +17,7 @@ public class Feature {
     private String value;
     private String type;
     private Long ovn;
-
+    // Setup 1:n and 1:1
     @Relationship(type = "RELATED_FEATURES")
     private List<Feature> features;
 }
