@@ -12,12 +12,14 @@ Graph based ML engineering collaboration platform. Following are its key feature
 * Rank ML Model
 * Register a ML Model
 * Attach ML model to user
+* Pointer to where ML is stored
 * ..... ....
 
 ### What its not?
 * Not a store of dataset
 * Not a store feature values
 * Not hyper parameter tuning framework
+* Not a ML model store
 
 ### What it is?
 * Composable features creation based on set theory – group/set
