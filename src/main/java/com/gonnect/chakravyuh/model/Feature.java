@@ -15,5 +15,6 @@ public class Feature {
     private String name;
     @Index
     private String value;
+    private String type;
     private Long ovn;
 }
