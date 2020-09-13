@@ -51,6 +51,9 @@ The following output shows sample graph inferencing of a typical ML engieering r
 - [x] Domain model design
 - [x] Data simulator, simulating ML processes end to end
 - [X] Project setup and execution
+- [X] Framework for features store/versioning
+- [X] Framework for dataset versioning
+- [X] Framework for hyper parameter management and versioning
 - [ ] Unit and integration tests
 - [ ] Reactive APIs to feed metadata to Chakravyuh
 - [ ] Dockerization & k8s
