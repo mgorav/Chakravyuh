@@ -29,7 +29,7 @@ The name comes Indian mythological epic Mahabharata. In short, it means an **_In
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
-![alt text](domain-model.png)
+![alt text](domain-model-design.png)
 
 ## How to Run?
 Data As Service is build using:
