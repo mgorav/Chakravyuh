@@ -33,7 +33,7 @@ The name comes Indian mythological epic Mahabharata. In short, it means an **_In
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
-![alt text](domain-graph-model.png)
+![alt text](domain-model.png)
 
 ## How to Run?
 Chakravyuh As Service is build using:
@@ -60,6 +60,7 @@ The following output shows sample graph inferencing of a typical ML engieering r
 - [X] Framework for features store/versioning
 - [X] Framework for dataset versioning
 - [X] Framework for hyper parameter management and versioning
+- [ ] Detect circular cycle in model when modeling referring *features*
 - [ ] Dataframe to feature extraction
 - [ ] Publishing OAS 3.0 schema to ease in model serving
 - [ ] Pointer to Model Store

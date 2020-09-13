@@ -18,6 +18,8 @@ public class Feature {
     private String type;
     private Long ovn;
     // Setup 1:n and 1:1
-    @Relationship(type = "RELATED_FEATURES")
-    private List<Feature> features;
+    @Relationship(type = "REFERENCE_ONE_TO_MANY__FEATURES")
+    private List<FeatureSet> featureSets;
+    @Relationship(type = "REFERENCE_ONE_TO_ONE__FEATURES")
+    private FeatureSet featureSet;
 }
