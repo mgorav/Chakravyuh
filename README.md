@@ -48,8 +48,7 @@ The following output shows sample graph inferencing of a typical ML engieering r
 
 **NOTE** The starting of above graph is **chakravyuh1**
 
-## Status
-### Solar System Exploration, 1950s – 1960s
+## Project Status
 
 - [x] Domain model design
 - [x] Data simulator, simulating ML processes end to end
