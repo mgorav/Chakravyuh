@@ -1,5 +1,5 @@
 # Chakravyuh
-Graph based ML engineering collobration platform. Following are its key features:
+Graph based ML engineering collaboration platform. Following are its key features:
 * Features management
 * Feature tracking & versioning
 * Feature composing using group/set
