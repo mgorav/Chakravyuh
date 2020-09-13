@@ -17,7 +17,7 @@ Graph based ML engineering tracking platform by infrencing ML engineering metada
 ### What it is?
 * Composable features creation based on set theory – group/set
 * Feature strongly typed to data frame/schema registry
-* Connect to data location (s3 etc)
+* Pointer to data location (s3 etc)
 * Record/Track execution based on hyper parameters
 * Versioning management as first class citizen of design
 
