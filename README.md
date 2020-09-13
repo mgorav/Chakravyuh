@@ -21,6 +21,12 @@ Graph based ML engineering tracking platform by infrencing ML engineering metada
 * Record/Track execution based on hyper parameters
 * Versioning management as first class citizen of design
 
+## Why name [Chakravyuh](http://mahabharata-research.com/military%20academy/the%20mysterious%20chakravyuha.html)
+
+The name comes Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engeering metadata interpretation, lineage tracking, feature management and more, which will use power of graph theory. 
+
+
+
 ## Domain Modeling
 Following diagram shows the domain modelling:
 ![alt text](domain-model.png)
