@@ -54,7 +54,7 @@ Below are steps to run this service:
 
 ## Output
 The following output shows sample graph inferencing of a typical ML engieering run:
-![alt text](output.png)
+![alt text](collobration-outcome.png)
 
 **NOTE** The starting of above graph is **chakravyuh1**
 

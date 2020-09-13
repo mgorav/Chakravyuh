@@ -11,6 +11,7 @@ public class User {
     @EndNode
     private Long id;
     @Index
+    @EndNode
     private String name;
     private Long ovn;
 }
