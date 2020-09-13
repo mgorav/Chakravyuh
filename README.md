@@ -33,7 +33,7 @@ The name comes Indian mythological epic Mahabharata. In short, it means an **_In
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
-![alt text](domain-model.png)
+![alt text](graph-domain-model.png)
 
 ## How to Run?
 Chakravyuh As Service is build using:
