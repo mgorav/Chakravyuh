@@ -25,7 +25,9 @@ Graph based ML engineering tracking platform by infrencing ML engineering metada
 
 ## Why name [Chakravyuh](http://mahabharata-research.com/military%20academy/the%20mysterious%20chakravyuha.html)?
 
-The name comes Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engeering metadata interpretation, lineage tracking, feature management and more, which will use power of graph theory. 
+The name comes Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engineering circle of interpretation, like lineage tracking, feature management and more, while performing ML chores using the power of graph theory. 
+
+![alt text](Chakravyuh.png)
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
