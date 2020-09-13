@@ -30,7 +30,7 @@ Following diagram shows the domain modelling:
 ![alt text](domain-model.png)
 
 ## How to Run?
-Data As Service is build using:
+Chakravyuh As Service is build using:
 - Java 14
 - Spring Boot 2.3.3
 - Neo4j
