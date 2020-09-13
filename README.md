@@ -54,6 +54,7 @@ The following output shows sample graph inferencing of a typical ML engieering r
 - [X] Framework for features store/versioning
 - [X] Framework for dataset versioning
 - [X] Framework for hyper parameter management and versioning
+- [ ] Dataframe to feature extraction
 - [ ] Unit and integration tests
 - [ ] Reactive APIs to feed metadata to Chakravyuh
 - [ ] Dockerization & k8s
