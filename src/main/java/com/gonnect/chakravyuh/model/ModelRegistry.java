@@ -12,8 +12,9 @@ public class ModelRegistry {
     @GeneratedValue
     private Long id;
     @Index
+    @EndNode
     private String name;
     private Long ovn;
-    @Relationship(type = "REGISTERED_MODEL")
-    private Model model;
+    @Relationship(type = "REGISTERED_MODELS")
+    private List<Model> models;
 }

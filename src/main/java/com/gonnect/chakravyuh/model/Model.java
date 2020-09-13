@@ -14,5 +14,7 @@ public class Model {
     @Index
     private String name;
     private Rank rank;
+    @Relationship(type = "CONSIST_OF_FEATURE_GROUP")
+    private List<FeatureGroup> featureGroups;
     private Long ovn;
 }

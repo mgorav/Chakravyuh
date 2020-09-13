@@ -2,6 +2,7 @@ package com.gonnect.chakravyuh;
 
 import com.gonnect.chakravyuh.model.*;
 import com.gonnect.chakravyuh.repository.*;
+import org.bouncycastle.math.raw.Mod;
 import org.neo4j.ogm.session.Session;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,12 +20,20 @@ public class DataSimulator {
     private final FeatureRepository featureRepository;
     private final FeatureSetRepository featureSetRepository;
     private final ParameterRepository parameterRepository;
+    private final UserRepository userRepository;
+    private final UserGroupRepository userGroupRepository;
+    private final ModelRepository modelRepository;
+    private ModelRegistryRepository modelRegistryRepository;
+    private RankRepository rankRepository;
     private final Session session;
 
     public DataSimulator(ChakravyuhRepository chakravyuhRepository, DataSetRepository dataSetRepository,
                          ExecutionRepository executionRepository, FeatureGroupRepository featureGroupRepository,
                          FeatureRepository featureRepository, FeatureSetRepository featureSetRepository,
-                         ParameterRepository parameterRepository, Session session) {
+                         ParameterRepository parameterRepository, UserRepository userRepository,
+                         UserGroupRepository userGroupRepository, ModelRepository modelRepository,
+                         ModelRegistryRepository modelRegistryRepository,
+                         RankRepository rankRepository, Session session) {
         this.chakravyuhRepository = chakravyuhRepository;
         this.dataSetRepository = dataSetRepository;
         this.executionRepository = executionRepository;
@@ -32,6 +41,11 @@ public class DataSimulator {
         this.featureRepository = featureRepository;
         this.featureSetRepository = featureSetRepository;
         this.parameterRepository = parameterRepository;
+        this.userRepository = userRepository;
+        this.userGroupRepository = userGroupRepository;
+        this.modelRepository = modelRepository;
+        this.modelRegistryRepository = modelRegistryRepository;
+        this.rankRepository = rankRepository;
         this.session = session;
     }
 
@@ -39,11 +53,39 @@ public class DataSimulator {
     public void simulate() {
         session.query("MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r", Collections.EMPTY_MAP);
         System.out.println("Entering data ....");
+        ModelRegistry modelRegistry = new ModelRegistry();
+        modelRegistry.setName("model-registry");
+        modelRegistry.setOvn(1L);
         for (long cnt = 1; cnt < 20; cnt++) {
 
             Chakravyuh chakravyuh = new Chakravyuh();
             chakravyuh.setName("chakravyuh" + cnt);
             chakravyuh.setOvn(1L);
+
+            User user = new User();
+            user.setName("model-name-" + cnt);
+            user.setId(1L);
+
+            UserGroup userGroup = new UserGroup();
+            userGroup.setName("user-group-" + cnt);
+            userGroup.setOvn(1L);
+
+            userGroup.setUsers(Arrays.asList(user));
+
+            chakravyuh.setUser(user);
+
+            Model model = new Model();
+            model.setName("ml-model-name-" + cnt);
+            model.setOvn(1L);
+
+            chakravyuh.setModel(model);
+
+            modelRegistry.setModels(Arrays.asList(model));
+
+            Rank rank = new Rank();
+            rank.setRank((int) cnt);
+            model.setRank(rank);
+
 
             FeatureGroup featureGroup = new FeatureGroup();
             featureGroup.setName("featureGroup" + cnt);
@@ -54,6 +96,8 @@ public class DataSimulator {
             featureGroup.setOvn(1L);
 
             featureGroup.setFeatureSets(Arrays.asList(featureSet));
+
+            model.setFeatureGroups(Arrays.asList(featureGroup));
 
             DataSet dataSet = new DataSet();
             dataSet.setName("dataset" + cnt);
@@ -90,10 +134,14 @@ public class DataSimulator {
             execution.setParameters(Arrays.asList(parameter1, parameter2));
 
             chakravyuh.setExecutions(Arrays.asList(execution));
-            chakravyuh.setFeatureGroups(Arrays.asList(featureGroup));
 
 
             // persist the graph
+            userRepository.save(user);
+            userGroupRepository.save(userGroup);
+            modelRepository.save(model);
+            rankRepository.save(rank);
+            modelRegistryRepository.save(modelRegistry);
 
             parameterRepository.save(parameter1);
             parameterRepository.save(parameter2);

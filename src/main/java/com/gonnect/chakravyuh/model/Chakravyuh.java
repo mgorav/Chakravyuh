@@ -20,5 +20,7 @@ public class Chakravyuh {
     private Model model;
     @Relationship(type = "MODEL_REGISTRY")
     private ModelRegistry modelRegistry;
+    @Relationship(type = "CONSIST_OF_FEATURE_GROUP")
+    private List<Execution> executions;
     private Long ovn;
 }

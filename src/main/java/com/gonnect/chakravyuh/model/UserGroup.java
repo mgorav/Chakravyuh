@@ -13,6 +13,7 @@ public class UserGroup {
     @EndNode
     private Long id;
     @Index
+    @EndNode
     private String name;
     @Relationship(type = "USERS_IN_GROUP")
     private List<User> users;
