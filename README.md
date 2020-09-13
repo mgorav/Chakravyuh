@@ -8,6 +8,8 @@ Graph based ML engineering collaboration platform. Following are its key feature
 * Model training & tracking with in built versioning support
 * Hyper parameter tracking with in built versioning support
 * Built on APIs first design paradigm
+* Discover ML Model
+* Rank ML Model
 * ..... ....
 
 ### What its not?
