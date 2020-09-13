@@ -10,6 +10,8 @@ Graph based ML engineering collaboration platform. Following are its key feature
 * Built on APIs first design paradigm
 * Discover ML Model
 * Rank ML Model
+* Register a ML Model
+* Attach ML model to user
 * ..... ....
 
 ### What its not?
@@ -35,7 +37,7 @@ The name comes Indian mythological epic Mahabharata. In short, it means an **_In
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
-![alt text](domain-model.png)
+![alt text](graph-domain-model.png)
 
 ## How to Run?
 Chakravyuh As Service is build using:
