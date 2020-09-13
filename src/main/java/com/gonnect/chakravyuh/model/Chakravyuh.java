@@ -14,9 +14,11 @@ public class Chakravyuh {
     private Long id;
     @Index
     private String name;
-    @Relationship(type = "ENROLL_AND_CREATE_FEATURE_GROUP")
-    private List<FeatureGroup> featureGroups;
-    @Relationship(type = "CHAKRAVYUH_EXECUTIONS")
-    private List<Execution> executions;
+    @Relationship(type = "MODEL_USER")
+    private User user;
+    @Relationship(type = "CURRENT_MODEL")
+    private Model model;
+    @Relationship(type = "MODEL_REGISTRY")
+    private ModelRegistry modelRegistry;
     private Long ovn;
 }
