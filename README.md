@@ -56,7 +56,7 @@ Below are steps to run this service:
 - Run the ChakravyuhApplication
 
 ## Output
-The following output shows sample graph inferencing of a typical ML engieering run:
+The following output shows sample graph inferencing of a typical ML engineering run:
 ![alt text](chakravyuh-output.png)
 
 **NOTE** The starting of above graph is **chakravyuh1**
