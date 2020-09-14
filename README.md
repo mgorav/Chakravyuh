@@ -44,8 +44,12 @@ The name comes from Indian mythological epic Mahabharata. In short, it means an 
 Following diagram shows the domain modelling:
 ![alt text](domain-model.png)
 
-## REST APIS
-Following pictures shows REST APIs:
+## Chakravyuh REST APIS
+Following pictures shows REST APIs. At broad level Chakravyuh supports following category of apis:
+- ML engineering chores APIs
+- ML engineering's collaborations APIs
+- Deployment APIs
+
 ![alt text](apis.png)
 
 ## How to Run?
