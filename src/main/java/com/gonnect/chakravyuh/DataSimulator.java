@@ -20,6 +20,7 @@ public class DataSimulator {
     private final FeatureSetRepository featureSetRepository;
     private final ParameterRepository parameterRepository;
     private final UserRepository userRepository;
+    private final UserGroupRepository userGroupRepository;
     private final ModelRepository modelRepository;
     private final ModelRegistryRepository modelRegistryRepository;
     private final RankRepository rankRepository;
@@ -31,7 +32,7 @@ public class DataSimulator {
                          ExecutionRepository executionRepository, FeatureGroupRepository featureGroupRepository,
                          FeatureRepository featureRepository, FeatureSetRepository featureSetRepository,
                          ParameterRepository parameterRepository,
-                         UserRepository userRepository, ModelRepository modelRepository,
+                         UserRepository userRepository, UserGroupRepository userGroupRepository, ModelRepository modelRepository,
                          ModelRegistryRepository modelRegistryRepository,
                          RankRepository rankRepository, HealthRepository healthRepository, Session session) {
         this.chakravyuhRepository = chakravyuhRepository;
@@ -42,6 +43,7 @@ public class DataSimulator {
         this.featureSetRepository = featureSetRepository;
         this.parameterRepository = parameterRepository;
         this.userRepository = userRepository;
+        this.userGroupRepository = userGroupRepository;
         this.modelRepository = modelRepository;
         this.modelRegistryRepository = modelRegistryRepository;
         this.rankRepository = rankRepository;
@@ -68,6 +70,11 @@ public class DataSimulator {
         User user = new User();
         user.setName("user-" + cnt);
         user.setOvn(1L);
+
+        UserGroup userGroup = new UserGroup();
+        userGroup.setName("user-group");
+        userGroup.setOvn(1L);
+        userGroup.setUsers(Arrays.asList(user));
 
 
         Model model1 = new Model();
@@ -150,6 +157,7 @@ public class DataSimulator {
         // persist the graph
         modelRegistryRepository.save(modelRegistry);
         userRepository.save(user);
+        userGroupRepository.save(userGroup);
         healthRepository.save(health);
         modelRepository.save(model1);
         rankRepository.save(rank);
