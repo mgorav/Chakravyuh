@@ -54,7 +54,7 @@ Below are steps to run this service:
 
 ## Output
 The following output shows sample graph inferencing of a typical ML engieering run:
-![alt text](collobration-outcome.png)
+![alt text](chakravyuh-output.png)
 
 **NOTE** The starting of above graph is **chakravyuh1**
 
@@ -67,7 +67,7 @@ The following output shows sample graph inferencing of a typical ML engieering r
 - [X] Framework for dataset versioning
 - [X] Framework for hyper parameter management and versioning
 - [ ] Detect circular cycle in model when modeling referring *features*
-- [ ] Dataframe to feature extraction
+- [ ] Data frame to feature extraction
 - [ ] Publishing OAS 3.0 schema to ease in model serving
 - [ ] Pointer to Model Store
 - [ ] Unit and integration tests

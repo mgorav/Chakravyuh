@@ -7,15 +7,14 @@ import java.util.List;
 
 @NodeEntity
 @Data
-public class UserGroup {
+public class Health {
     @Id
     @GeneratedValue
-    @EndNode
     private Long id;
     @Index
-    @EndNode
     private String name;
-    @Relationship(type = "USERS_IN_GROUP")
-    private List<User> users;
+    @Index
+    private String value;
+    private String type;
     private Long ovn;
 }

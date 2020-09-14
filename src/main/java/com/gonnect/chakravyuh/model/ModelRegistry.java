@@ -5,16 +5,15 @@ import org.neo4j.ogm.annotation.*;
 
 import java.util.List;
 
-@NodeEntity
+@NodeEntity("node-registry")
 @Data
 public class ModelRegistry {
     @Id
     @GeneratedValue
     private Long id;
     @Index
-    @EndNode
     private String name;
-    private Long ovn;
     @Relationship(type = "REGISTERED_MODELS")
     private List<Model> models;
+    private Long ovn;
 }

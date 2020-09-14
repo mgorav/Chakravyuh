@@ -9,8 +9,6 @@ public class Rank {
     @Id
     @GeneratedValue
     private Long id;
-    @EndNode
-    @Index
     private Integer rank;
     private Long ovn;
 }

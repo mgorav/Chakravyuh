@@ -8,7 +8,6 @@ import org.neo4j.ogm.annotation.*;
 public class Parameter {
     @Id
     @GeneratedValue
-    @EndNode
     private Long id;
     @Index
     private String name;

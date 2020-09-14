@@ -1,6 +1,5 @@
 package com.gonnect.chakravyuh.repository;
 
-import com.gonnect.chakravyuh.model.Chakravyuh;
 import com.gonnect.chakravyuh.model.User;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 
