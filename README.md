@@ -40,7 +40,7 @@ The name comes from Indian mythological epic Mahabharata. In short, it means an 
 
 ![alt text](Chakravyuh.png)
 
-## Domain Modeling
+## Graph Domain Modeling
 Following diagram shows the domain modelling:
 ![alt text](domain-model.png)
 
