@@ -42,7 +42,7 @@ The name comes from Indian mythological epic Mahabharata. In short, it means an 
 
 ## Domain Modeling
 Following diagram shows the domain modelling:
-![alt text](graph-domain-model.png)
+![alt text](domain-model.png)
 
 ## How to Run?
 Chakravyuh As Service is build using:

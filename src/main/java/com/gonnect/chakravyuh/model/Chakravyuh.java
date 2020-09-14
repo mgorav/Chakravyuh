@@ -14,9 +14,9 @@ public class Chakravyuh {
     private Long id;
     @Index
     private String name;
-    @Relationship(type = "CURRENT_MODEL")
+    @Relationship(type = "REGISTER_OR_USES_MODEL")
     private Model model;
-    @Relationship(type = "USES_MODEL_REGISTRY")
+    @Relationship(type = "DISCOVER_MODELS")
     private ModelRegistry modelRegistry;
     @Relationship(type = "ENROLLED_USER")
     private User user;
