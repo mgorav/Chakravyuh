@@ -16,7 +16,7 @@ Graph based ML engineering collaboration platform. Following are its key feature
 * ..... ....
 
 ## Yet Another ML Framework
-We have various platform but no collaboration framework. The business values are lost when we switch from one platform to another. How can I address this? Proposal  is: **_Chakravyuh_**. A platform like Sagemaker, Kubeflow etc are platform to execute ML engineering chores. The real value is in connecting these chores and understanding. When we talk about connecting, nothing beats **_Graph_**.
+We have various platform but no collaboration framework. The business values are lost when we switch from one platform to another. How can I address this? Proposal  is: **_Chakravyuh_**. A platform like Sagemaker, Kubeflow etc are platform to execute ML engineering chores. The real value is in connecting these chores and understanding. When we talk about connecting, nothing beats **_Graph_**.The idea is to build *facebook* form ML Engineering. :-) In this context, ML model are user/friend and things like, features, model health stats, dataset etc are continuous ML knowledge stream. This platform should allow sharing of model (ranking) by model performance etc.
 
 ### What its not?
 * Not a store of dataset
@@ -36,7 +36,7 @@ We have various platform but no collaboration framework. The business values are
 
 ## Why name [Chakravyuh](http://mahabharata-research.com/military%20academy/the%20mysterious%20chakravyuha.html)?
 
-The name comes from Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engineering circle of interpretation easy, like lineage tracking, feature management and more, while performing ML chores using the power of graph theory. The idea is to build *facebook* form ML Engineering. :-) In this context, ML model are user/friend and things like, features, model health stats, dataset etc are continuous ML knowledge stream. This platform should allow sharing of model (ranking) by model performance etc.
+The name comes from Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engineering circle of interpretation easy, like lineage tracking, feature management and more, while performing ML chores using the power of graph theory.
 
 ![alt text](Chakravyuh.png)
 
