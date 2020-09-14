@@ -16,7 +16,7 @@ Graph based ML engineering collaboration platform. Following are its key feature
 * ..... ....
 
 ## Yet Another ML Framework
-We have various platform but no collaboration framework. The business values are lost when we switch from one platform to another. How can I address this? Proposal  is: **_Chakravyuh_**. A platform like Sagemaker, Kubeflow etc are platform to execute ML engineering chores. The real value is in connecting these chores and understanding. When we talk about connect, nothing beats **_Graph_**.
+We have various platform but no collaboration framework. The business values are lost when we switch from one platform to another. How can I address this? Proposal  is: **_Chakravyuh_**. A platform like Sagemaker, Kubeflow etc are platform to execute ML engineering chores. The real value is in connecting these chores and understanding. When we talk about connecting, nothing beats **_Graph_**.
 
 ### What its not?
 * Not a store of dataset
