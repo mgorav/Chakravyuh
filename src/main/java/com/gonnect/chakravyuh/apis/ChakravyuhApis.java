@@ -23,6 +23,12 @@ public class ChakravyuhApis {
         return "Enrolled";
     }
 
+    @PostMapping(value = "/deployer")
+    public String deployer(Chakravyuh chakravyuh) {
+
+        return "Model deployed to target platform";
+    }
+
     @PostMapping(value = "{id}/users/{userId}/models/")
     public String addModel(@RequestParam Long id, @RequestParam Long userId, Model model) {
 
@@ -35,19 +41,19 @@ public class ChakravyuhApis {
         return "Features added";
     }
 
-    @PostMapping(value = "{id}/models/users/{userId}/{modelId}/executions")
+    @PostMapping(value = "{id}/users/{userId}/models/{modelId}/executions")
     public String trainModel(@RequestParam Long id, @RequestParam Long userId, @RequestParam Long modelId, List<Parameter> parameters) {
 
         return "Model training triggered";
     }
 
-    @GetMapping("/{id}/models/users/{userId}/{modelId}/features")
+    @GetMapping("/{id}/users/{userId}/models/{modelId}/features")
     public List<FeatureGroup> features(@RequestParam Long id, @RequestParam Long userId, @RequestParam Long modelId) {
 
         return Collections.emptyList();
     }
 
-    @GetMapping("/{id}/models/users/{userId}/{modelId}/executions")
+    @GetMapping("/{id}/users/{userId}/models/{modelId}/executions")
     public Execution trainingOutcome(@RequestParam Long id, @RequestParam Long userId, @RequestParam Long modelId) {
 
         return new Execution();
