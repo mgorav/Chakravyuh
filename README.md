@@ -36,7 +36,7 @@ We have various platform but no collaboration framework. The business values are
 
 ## Why name [Chakravyuh](http://mahabharata-research.com/military%20academy/the%20mysterious%20chakravyuha.html)?
 
-The name comes from Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engineering circle of interpretation easy, like lineage tracking, feature management and more, while performing ML chores using the power of graph theory. The idea is to build *facebook* form ML Engineering. :-) In this context, ML model are user/friend and things like, features, model health stats, dataset etc are thee stream. This platform should allow sharing of model (ranking) by model performance etc.
+The name comes from Indian mythological epic Mahabharata. In short, it means an **_Invincible_** circle. This project aim to make an invincible ML engineering circle of interpretation easy, like lineage tracking, feature management and more, while performing ML chores using the power of graph theory. The idea is to build *facebook* form ML Engineering. :-) In this context, ML model are user/friend and things like, features, model health stats, dataset etc are continuous ML knowledge stream. This platform should allow sharing of model (ranking) by model performance etc.
 
 ![alt text](Chakravyuh.png)
 
